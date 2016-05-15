@@ -3,7 +3,7 @@ class AdventureBook
 	
     require('./page_display.rb')
 	require 'colorize'
-	
+	#newlocalbranchcomment
 	#can you bulk these, or have to individually define?
 	attr_reader :name
 	attr_reader :page 
