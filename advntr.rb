@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #this is what will run an adventure
 require('./adventure_book.rb')
 require('./page_display.rb')

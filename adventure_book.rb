@@ -1,3 +1,4 @@
+
 class AdventureBook
 	
     require('./page_display.rb')
@@ -77,4 +78,3 @@ end
 		end
 	end
    
-end

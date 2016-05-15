@@ -8,4 +8,3 @@ end
 
 #need to put some stuff to change the color for you are dead, end of book, etc
 #gem install on windows failing so hold off for now
-
