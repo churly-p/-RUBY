@@ -1,4 +1,5 @@
-#this is what will run as an adventure
+<<<<<<< HEAD
+#this is what will run an adventure
 require('./adventure_book.rb')
 require('./page_display.rb')
 
@@ -8,10 +9,10 @@ adventurer =  (gets).chomp  #if we encapsulate the gets in (parens) we can treat
 #we don't really care about checking input here
 #this is not sanitary at all in the real world
 
-
+book = "book1.txt"
 clear_page()
 #lets get started, instantiate the adventure
-a = AdventureBook.new(adventurer)
+a = AdventureBook.new(adventurer, book)
 #set nextpage to inital page, always start on page 1
 next_page = 1
 
@@ -24,7 +25,7 @@ while next_page != a.max_page
 	while next_page == 0  || next_page > a.max_page #input was not a number (or larger than maxpage) try for a better input
 		puts "EXCEPTION ERROR: #{nps} >> page: #{next_page} : NOT A VALID PAGE NUMBER!"
 		nps = ((gets).chomp).to_i
-		nextpage = nps.to_i  #same as above, doesn't seem elegant, but works
+		next_page = nps.to_i  #same as above, doesn't seem elegant, but works
 	end
 	#we have a number to work with
 	a.jump_to_page(next_page)
@@ -32,5 +33,3 @@ while next_page != a.max_page
 end
 
 
- #ClrTrmnl should not be camel case since it's just a method ca;;
- #
